@@ -42,7 +42,7 @@ jobs:
         python -m pip install django
     - name: Run tests
       run: |
-        python assignment8proj/manage.py test
+        python manage.py test
   
   Deploy:
     runs-on: ubuntu-latest

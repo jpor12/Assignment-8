@@ -12,3 +12,9 @@ class AboutViewTestCase(TestCase):
         response = self.client.get('/about/')
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "About Us\nThis is the about page of my Django app.")
+
+class InformationViewTestCase(TestCase):
+    def test_information_view(self):
+        response = self.client.get('/information/')
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "Information\nThis is the information page for my Django app.")
