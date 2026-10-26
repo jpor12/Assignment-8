@@ -17,4 +17,4 @@ class InformationViewTestCase(TestCase):
     def test_information_view(self):
         response = self.client.get('/information/')
         self.assertEqual(response.status_code, 200)
-        self.assertContains(response, "Information\nThis is the information page for my Django app.")
+        self.assertContains(response, "Information\nThis is the Information page for my Django app.")

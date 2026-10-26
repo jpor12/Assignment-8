@@ -9,4 +9,4 @@ def about(request):
     return HttpResponse("<h1>About Us\nThis is the about page of my Django app.</h1>")
 
 def information(request):
-    return HttpResponse("<h1>Information\nThis is the information page for my Django app.</h1>")
+    return HttpResponse("<h1>Information\nThis is the Information page for my Django app.</h1>")
